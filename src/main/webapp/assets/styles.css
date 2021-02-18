@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+
+*{
+    transition:all 0.3s ease-in-out;
+    text-decoration:none;
+}
+
+
+.container{
+    clear:both;
+    overflow:auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+nav{
+    text-align: center;
+}
+
+.logo img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;}
+
+ul {
+    margin: 0;
+}
+
+ul li{
+    display: inline-block; padding:10px;
+    font-size:30px; font-family: 'Lobster', cursive;
+}
+
+a:link, a:visited {
+    color:black
+}
+
+a:hover{
+    color:orange;
+}
+
+hr {
+    color: #000;
+}
+
+.mainContent .recipeForm {
+    position: relative;
+    z-index: 1;
+    background: rgba(21, 26, 31, 0.3);
+    max-width: 406px;
+    margin: auto;
+    padding: 45px 45px 20px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+.mainContent .recipeForm input, select, textarea {
+    outline: 0;
+    background: #f2f2f2;
+    width: 400px;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.mainContent .recipeForm input:hover,.recipeForm input:active,.recipeForm input:focus, .recipeForm select:hover,.recipeForm select:active,.recipeForm select:focus, .recipeForm textarea:hover,.recipeForm textarea:active,.recipeForm textarea:focus {
+    background: rgba(175, 5, 173, 0.3);
+}
+
+.mainContent .success {
+    text-align: center;
+    width: 600px;
+    margin: 9% auto;
+    background-color: #ffffff;
+    opacity: 0.8;
+    border: 1px solid #af05ad;
+    padding: 10px 10px 20px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.mainContent .success div{
+    margin-bottom: 20px;
+}
+
+
+.button {
+    background-color: #af05ad; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.homepage {
+    display: inline-block;
+}
