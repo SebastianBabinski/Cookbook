@@ -39,9 +39,9 @@ public class AppController {
 
         if (result.hasErrors()) {
             return "user/registerForm";
+        } else {
+            userRepo.save(user);
         }
-        userRepo.save(user);
-
         return "user/registerSuccess";
     }
 

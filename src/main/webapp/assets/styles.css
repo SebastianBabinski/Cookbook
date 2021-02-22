@@ -22,7 +22,9 @@ nav{
 .logo img{
     display: block;
     margin-right: auto;
-    margin-left: auto;}
+    margin-left: auto;
+    max-width: 100%;
+}
 
 ul {
     margin: 0;
@@ -112,4 +114,16 @@ hr {
 
 .homepage {
     display: inline-block;
+}
+
+.mainContent .mealType {
+    margin: auto auto;
+    text-align: center;
+    width: auto;
+    border-spacing: 6px;
+
+}
+
+.all {
+    max-width: 100%;
 }
