@@ -3,6 +3,8 @@ package babinski.sebastian.entity;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class User {
@@ -27,6 +29,21 @@ public class User {
     @NotBlank
     @Column(name = "last_name", nullable = false, length = 20)
     private String lastName;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Recipe> recipeList;
+
+    public User() {
+        recipeList = new ArrayList<>();
+    }
+
+    public List<Recipe> getRecipeList() {
+        return recipeList;
+    }
+
+    public void setRecipeList(List<Recipe> recipeList) {
+        this.recipeList = recipeList;
+    }
 
     public Long getId() {
         return id;

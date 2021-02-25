@@ -20,6 +20,7 @@
                     2: ${recipes.mealType}
                     3: ${recipes.prepTime}
                     4: ${recipes.recipeDescription}
+
                 </td>
             </tr>
         </table>

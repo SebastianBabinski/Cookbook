@@ -1,5 +1,7 @@
 package babinski.sebastian.entity;
 
+import org.hibernate.validator.constraints.URL;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
@@ -26,6 +28,17 @@ public class Recipe {
     @NotBlank
     @Column(name = "description")
     private String recipeDescription;
+
+    @ManyToOne
+    private User user;
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Long getId() {
         return id;

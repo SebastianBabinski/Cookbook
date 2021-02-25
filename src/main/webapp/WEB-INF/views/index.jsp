@@ -1,4 +1,7 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+
 <html>
 <head>
     <style>
@@ -16,16 +19,10 @@
     <jsp:include page="header.jsp"/>
 </header>
 
-    <table>
-        <tr class="homepage">
-            <td>witaj na naszej stronce recipkow</td>
-        </tr>
-        <tr class="homepage">
-            <td>dodawaj recipki</td>
-            <td>sprawdzaj recipki</td>
-            <td>sprawdzaj recipki</td>
-        </tr>
-    </table>
+<div>
+    <security:authorize access="isAuthenticated()">
+        authenticated as <security:authentication property="principal.username" />
+    </security:authorize>
 </div>
 
 
